@@ -1,6 +1,6 @@
 # RelationGAN
 Source Code for Our Paper "When Relation Networks meet GANs: Relation GANs with Triplet Loss"
-#Requirements:
+# Requirements:
 * python3
 * pytorch
 * torchvision
@@ -8,10 +8,10 @@ Source Code for Our Paper "When Relation Networks meet GANs: Relation GANs with 
 * scipy
 * tensorflow-gpu
 
-#Introduction
+# Introduction
 We provide PyTorch implementations for Relation GAN and some measuring tools.
 
-##This code include:
+## This code include:
 
 | GAN loss        | name           | FID(Cifar10) |
 | ------------- |:-------------:| -----:|
@@ -23,7 +23,7 @@ We provide PyTorch implementations for Relation GAN and some measuring tools.
 | Our | relu_mean     |    13.5±0.080 |
 | Our* | mean_relu       |    47.9±0.30 |
 
-##Measuring tools
+## Measuring tools
 Frechet Inception Distance(https://github.com/mseitzer/pytorch-fid)
 Inception Score (https://github.com/google/compare_gan)
 Kernel Inception distance (https://github.com/google/compare_gan)
@@ -37,7 +37,7 @@ Our pytorch inceptionv3 model can be download here (https://download.pytorch.org
 
 Our tensorflow inceptionv3 model can be download here (http://download.tensorflow.org/models/frozen_inception_v1_2015_12_05.tar.gz)
 
-#How to use? 
+# How to use? 
 ```
 git clone 
 cd Final_RelationGAN\Final\
@@ -52,7 +52,7 @@ python FID_Measure.py --name Relation --which_loss mean_relu --dataroot path_to_
 #get IS,KID,MS_SSIM with Inception-v3 model trained by tensorflow.
 python IS_Score_Tensorflow.py --name Relation --which_loss mean_relu --dataroot path_to_img --gpu_id 1 --resize_or_crop resize_and_crop --which_step lateset  --loadSize 64 --which_model_netG basic_64 --which_model_netD relation_64
 ```
-#Acknowledgments
+# Acknowledgments
 Our code is based on pytorch-CycleGAN-and-pix2pix(https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
 
 
