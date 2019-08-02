@@ -16,11 +16,11 @@ We provide PyTorch implementations for Relation GAN and some measuring tools.
 | GAN loss        | name           | FID(Cifar10) |
 | ------------- |:-------------:| -----:|
 | WGAN-GP      | wgangp | 63.7±0.11 |
-| LS_GAN      | ls_gan      | __14.9±0.11__|
+| LS_GAN      | ls_gan      | 14.9±0.11|
 | vanilla GAN | sgan      |   26.4±0.16 |
 | Relativistic_GAN | rele      |   24.1±0.19 |
 | GAN with TripletLoss | triplet      |    39.23±0.23 |
-| Our | relu_mean     |    13.5±0.080 |
+| Our | relu_mean     |    __13.5±0.080__ |
 | Our* | mean_relu       |    47.9±0.30 |
 
 ## Measuring tools
